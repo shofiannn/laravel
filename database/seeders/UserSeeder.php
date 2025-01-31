@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
         $faker = Faker::create('id_ID');
         for($i=1; $i <=10; $i++) {
             DB::table('users')->insert([
-                'name' => $faker->name,
+                'username' => $faker->name,
                 'email' => $faker->email,
                 'password' => Hash::make('ifa12345'),
         ]);
